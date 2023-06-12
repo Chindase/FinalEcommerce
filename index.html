@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce-website</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/9da87e2b4e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    
+    <div class="main-container">
+        <!-- Header and Hero Section -->
+        <div class="head_hero-container">
+            <!-- Container for the website logo, links and icons -->
+            <header class="navbar-container">
+                
+                <div class="logo-container"><img class="logo" src="./assets/images/logo_white.png" alt=""></div>
+                <!-- navigation section -->
+                <div class="nav_links-container">
+                    <ul>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <!--  navigation section -->
+                <div class="nav_icons-container">
+                    <i class="fa-regular fa-user icon"></i>
+                    <i class="fa fa-cart-shopping icon"></i>
+                    <i class="fa-solid fa-bars fa-beat icon" onclick="openBurger_menu()"></i>
+                    
+                </div>
+            </header>
+            <!-- Hero Section -->
+            <div class="hero_message-container">
+                <h5>New Product Collection</h5>
+                <button>SHOP NOW</button>
+            </div>
+        </div>
+    </div>
+    <!-- This section contains the overlay and its contents that appear when the burger menu is clicked -->
+        <div class="overlay" id="overlay_menu">
+            <i class="fa-regular fa-rectangle-xmark close-burger"   onclick="closeBurger_menu()"></i>
+            <div class="burger-content">
+                <ul>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- This section contains the Furniture and Basket Collection -->
+        <div class="main_furniture_basket-container">
+            <div class="furniture-container">
+            <img src="./assets/images/furn.jpg" alt="furniture">
+                <h4>new furniture <br/> collection</h4>
+            <button class="furniture_collection-btn">shop now</button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="1" y1="12" x2="40" y2="12"></line></svg>  
+        </div> 
+        <div class="basket-container">
+            <img src="./assets/images/bask.jpg" alt="basket">
+            <div class="collection_title_button">
+                <h4>new baskets <br/> collection</h4>
+            <button class="basket_collection-btn">shop now</button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="1" y1="12" x2="40" y2="12"></line></svg>  
+        </div>
+        </div>
+        </div>
+        <!-- Best Products Sections -->
+        <div class="best-products-header">
+            <h1>best products</h1>
+        </div>
+        <div class="best-products">
+            <div class="best-products-item">
+                <img src="./assets/images/pr1.png" alt="furniture">
+                <div class="best-products-item-title">  
+                </div>
+                <h2>christopher <br/> knight furniture</h2>
+                <h3>$ 235.23</h3>
+            </div>
+            <div class="best-products-item">
+                <img src="./assets/images/pr2.png" alt="furniture">
+                <div class="best-products-item-title">
+                </div>
+                <h2>christopher <br/> knight furniture</h2>
+                <h3>$ 67.15</h3>
+            </div>
+            <div class="best-products-item">
+                <img src="./assets/images/pr3.png" alt="furniture">
+                <div class="best-products-item-title">
+                </div>
+                <h2>christopher <br/> knight furniture</h2>
+                <h3>$ 49.82</h3>
+            </div>
+            <div class="best-products-item">
+                <img src="./assets/images/pr4.png" alt="furniture">
+                <div class="best-products-item-title">
+                </div>
+                <h2>christopher <br/> knight furniture</h2>
+                <h3>$ 22.30</h3>
+            </div>
+            <div class="best-products-item">
+                <img src="./assets/images/pr5.png" alt="furniture">
+                <div class="best-products-item-title">
+                </div>
+                <h2>christopher <br/> knight furniture</h2>
+                <h3><h3>$ 8.13</h3></h3>
+            </div>
+            <div class="best-products-item">
+                <img src="./assets/images/pr6.png" alt="furniture">
+                <div class="best-products-item-title">
+                </div>
+                <h2>christopher <br/> knight furniture</h2>
+                <h3>$ 11.08</h3>
+            </div>
+            <div class="best-products-item">
+                <img src="./assets/images/pr7.png" alt="furniture">
+                <div class="best-products-item-title">
+                </div>
+                <h2>christopher <br/> knight furniture</h2>
+                <h3>$ 15.10</h3>
+            </div>
+            <div class="best-products-item">
+                <img src="./assets/images/pr8.png" alt="furniture">
+                <div class="best-products-item-title">
+                </div>
+                <h2>christopher <br/> knight furniture</h2>
+                <h3>$ 234.26</h3>
+            </div>
+            <!-- Recent News Section -->
+            <div class="recent-news-header">
+            <h1>recent news</h1>
+        </div>
+        <div class="recent-news">
+            <div class="recent-news-item">
+                <img src="./assets/images/b1.jpg" alt="furniture">
+                <div class="recent-news-item-title">
+                </div>
+                    <h2>How to Optimize Your eCommerce Store <br/> for Better Conversions</h2>
+                    <button class="recent-news-item-btn">read more</button>
+                <div class="publish-date">
+                    <div class="date-inner-border">
+                        <h5>20</h5>
+                    <p>MAY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="recent-news-item">
+                <img src="./assets/images/b2.jpg" alt="furniture">
+                <div class="recent-news-item-title">
+                </div>
+                    <h2>How to Optimize Your eCommerce Store <br/> for Better Conversions</h2>
+                    <button class="recent-news-item-btn">read more</button>
+                <div class="publish-date">
+                    <div class="date-inner-border">
+                        <h5>13</h5>
+                    <p>MAY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="recent-news-item">
+                <img src="./assets/images/b3.jpg" alt="furniture">
+                <div class="recent-news-item-title">
+                </div>
+                    <h2>How to Optimize Your eCommerce Store <br/> for Better Conversions</h2>
+                    <button class="recent-news-item-btn">read more</button>
+                <div class="publish-date">
+                    <div class="date-inner-border">
+                        <h5>04</h5>
+                    <p>MAY</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+        <!-- The Footer Section -->
+        <footer>
+            <div class="left-footer">
+                <div class="footer-logo">
+                    <img src="./assets/images/Footer logo.png" alt="">
+                </div>
+                <div class="footer-location flex-items">
+                    <img src="./assets/images/map-pin.svg" alt=""></i>
+                    <p>194 Main Rd T, FS Rayed, USA</p>
+                </div>
+                <div class="footer-email-address flex-items">
+                    <img src="./assets/images/mail.svg" alt="">
+                    <p>info@tmart.org</p>
+                </div>
+                <div class="footer-contact flex-items">
+                    <img src="./assets//images/phone-call.svg" alt="">
+                    <p>+233 244 244 244</p>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div class="footer-subscribe">
+                    <p>Subscribe to our newsletter and get 10% off your first purchase</p>
+                </div>
+                <div class="footer-email-input">
+                    <input type="email" name="" id="" placeholder="Enter email address">
+                    <button class="email-btn" title="send-email-address"><img class="email-send" src="./assets/images/Vector.png" alt=""></button>
+                </div>
+                <div class="footer-line">
+                    <hr/>
+                </div>
+                <div class="footer-copy-rights flex-items">
+                    <img src="./assets/images/copy-rights.png" alt="">
+                    <p>Tmart - All rights reserved</p>
+                </div>   
+            </div>
+            <div class="tablet-hr-copyright">
+                <div class="tablet-footer-line">
+                    <hr/>
+                </div>
+                <div class="tablet-footer-copy-rights flex-items">
+                    <img src="./assets/images/copy-rights.png" alt="">
+                    <p>Tmart - All rights reserved</p>
+                </div>
+            </div>
+             
+        </footer>
+
+        <script src="./js/burger_menu.js"></script>
+</body>
+</html>
